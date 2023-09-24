@@ -178,18 +178,10 @@ a {
   width: 1600px;
 }
 
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
 .icon-antenna {
   width: 2.25em;
+  background-image: url("images\icons.svg");
   background-repeat: no-repeat;
-  background-image: url("https://github.com/ovidutzul/goit-markup-hw-04/blob/d227cde2910d9dda85974247db148f737edcb2e1/images/icons.svg");
 }
 
 .about-us-container {
