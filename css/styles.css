@@ -136,9 +136,9 @@ a {
   height: 600px;
   flex-shrink: 0;
   background: #2f303a;
-  background-image: url("img11.jpg"),
+  background: url("https://github.com/ovidutzul/goit-markup-hw-04/blob/0ca94cb4a67440eb68df099aae1f64d436773cd3/images/img11.jpg"),
     lightgray 0px -147.517px / 100% 170.667% no-repeat;
-  background-size: cover;
+  background-size: 1440px 600px;
   background: rgba(47, 48, 58, 0.4);
 }
 
@@ -186,10 +186,10 @@ a {
   stroke: currentColor;
   fill: currentColor;
 }
-.icon-antenna1 {
+.icon-antenna {
   width: 2.25em;
   background-repeat: no-repeat;
-  background-image: url("icon-antenna1 icons.svg");
+  background-image: url("https://github.com/ovidutzul/goit-markup-hw-04/blob/d227cde2910d9dda85974247db148f737edcb2e1/images/icons.svg");
 }
 
 .about-us-container {
