@@ -39,6 +39,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 .global-header .main-navigation ul {
   display: flex;
   justify-content: space-between;
@@ -112,6 +113,25 @@ a {
   padding: 16px 0;
 }
 
+.icon {
+  width: 270px;
+}
+
+.icon-smartphone {
+  width: 0.625em;
+}
+
+.icon-antenna {
+  width: 270px;
+}
+
+.icon-client {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+}
+
 .phone-number {
   color: var(--light-gray-text-color);
   font-size: 14px;
@@ -136,10 +156,8 @@ a {
   height: 600px;
   flex-shrink: 0;
   background: #2f303a;
-  background: url("https://github.com/ovidutzul/goit-markup-hw-04/blob/0ca94cb4a67440eb68df099aae1f64d436773cd3/images/img11.jpg"),
+  background: url("../images/business-solution-background.png"),
     lightgray 0px -147.517px / 100% 170.667% no-repeat;
-  background-size: 1440px 600px;
-  background: rgba(47, 48, 58, 0.4);
 }
 
 .business-solution {
@@ -176,16 +194,12 @@ a {
 
 .about-us-section {
   width: 1600px;
-}
-
-.icon-antenna {
-  width: 2.25em;
-  background-image: url("images\icons.svg");
-  background-repeat: no-repeat;
+  height: 1630px;
 }
 
 .about-us-container {
   padding: 94px 215px;
+  margin-left: -40px;
 }
 
 .about-us-container ul {
@@ -193,6 +207,12 @@ a {
   width: 1200px;
   height: 101px;
   flex-shrink: 0;
+  gap: 25px;
+}
+
+.about-us-container ul {
+  width: 270px;
+  height: 131px;
 }
 
 .about-us {
@@ -220,16 +240,17 @@ a {
 }
 
 .what-we-do-container {
+  display: flex;
   flex-wrap: wrap;
   width: 1200px;
   height: 386px;
-  padding: 0 200px 94px;
+  padding: 0 205px;
   background: var(--button-hover-text-color);
   margin: 94px 0;
 }
 
 .what-we-do-container h2 {
-  padding-left: 370px;
+  padding-left: 480px;
   padding-bottom: 15px;
 }
 
@@ -239,12 +260,14 @@ a {
   height: 294px;
   flex-shrink: 0;
   padding: 0 15px;
-  gap: 30px;
+  gap: 35px;
 }
+
 .our-team-section h2 {
   padding-top: 94px;
   margin-bottom: 50px;
 }
+
 .chapter {
   text-align: center;
   color: var(--dark-gray-text-color);
@@ -293,6 +316,25 @@ a {
   letter-spacing: 0.48px;
   margin-top: -10px;
   margin-bottom: 30px;
+}
+
+.regular-customer-section {
+  background: #fff;
+}
+
+.regular-customer-section ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-left: -35px;
+}
+
+.regular-customer-container {
+  display: flex;
+  width: 1200px;
+  height: 184px;
+  padding-left: 215px;
+  padding-bottom: 94px;
 }
 
 .buttons {
