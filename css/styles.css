@@ -236,7 +236,6 @@ a {
   width: 270px;
   height: 75px;
   flex-shrink: 0;
-  padding: 0 15px;
 }
 
 .what-we-do-container {
@@ -316,6 +315,34 @@ a {
   letter-spacing: 0.48px;
   margin-top: -10px;
   margin-bottom: 30px;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  width: 206px;
+  height: 44px;
+  margin-bottom: 32px;
+  margin-left: 30px;
+}
+
+.icon1 {
+  width: 44px;
+  width: 44px;
+}
+
+.icon1:focus {
+  outline: 0;
+}
+
+.icon1:hover {
+  background-color: #188ce8;
+  fill: white;
+}
+
+.icon1:active {
+  background-color: #41b97c;
+  fill: blue;
 }
 
 .regular-customer-section {
