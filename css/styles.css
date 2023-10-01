@@ -6,17 +6,14 @@
 }
 
 body {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px;
-}
-
-#pagina {
-  position: absolute;
-  width: 1600px;
-  min-height: 950px;
-  margin-left: -800px;
-  left: 50%;
+  min-width: 1600px;
 }
 
 ul {
@@ -45,7 +42,6 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 259px;
-  align-items: center;
   margin-left: 93px;
 }
 
@@ -81,6 +77,18 @@ a {
   padding: 16px 0;
 }
 
+.icon-nav {
+  width: 16px;
+  height: 11.996px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.icon-nav:hover {
+  fill: var(--background-hover-button-color);
+}
+
 .nav-link {
   font-size: 14px;
   font-weight: 500;
@@ -113,21 +121,19 @@ a {
   padding: 16px 0;
 }
 
+.mail-address:hover,
+.phone-number:hover {
+  color: rgba(33, 150, 243, 1);
+}
+
 .icon {
-  width: 270px;
-}
-
-.icon-smartphone {
-  width: 0.625em;
-}
-
-.icon-antenna {
   width: 270px;
 }
 
 .icon-client {
   border-radius: 4px;
   border: 1px solid #afb1b8;
+
   width: 170px;
   height: 92px;
 }
@@ -156,7 +162,7 @@ a {
   height: 600px;
   flex-shrink: 0;
   background: #2f303a;
-  background: url("../images/business-solution-background.png"),
+  background: url("../images/business-solution-background.jpg"),
     lightgray 0px -147.517px / 100% 170.667% no-repeat;
 }
 
@@ -326,9 +332,40 @@ a {
   margin-left: 30px;
 }
 
+.social-bottom {
+  display: block;
+  padding-top: 20px;
+  margin-left: 94px;
+}
+
+.social-bottom ul li svg {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.social-bottom h4 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+.social-bottom ul {
+  display: flex;
+  margin-left: -40px;
+  width: 204px;
+  height: 44px;
+  gap: 10px;
+}
+
 .icon1 {
+  border-radius: 44px;
   width: 44px;
-  width: 44px;
+  height: 44px;
+  fill: #ffffff;
 }
 
 .icon1:focus {
@@ -336,13 +373,11 @@ a {
 }
 
 .icon1:hover {
-  background-color: #188ce8;
-  fill: white;
+  fill: #2196f3;
+  border-radius: 44px;
 }
 
 .icon1:active {
-  background-color: #41b97c;
-  fill: blue;
 }
 
 .regular-customer-section {
@@ -408,7 +443,6 @@ a {
 .our-work-section {
   width: 75%;
   height: 1548px;
-  padding-left: 215px;
   border: 1px;
   gap: 30px;
 }
@@ -497,7 +531,7 @@ a {
 }
 
 .bottom {
-  display: inline-block;
+  display: flex;
   width: 1600px;
   height: 251px;
   flex-shrink: 0;
