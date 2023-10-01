@@ -35,6 +35,9 @@ a {
 .global-header .header-logo {
   display: flex;
   align-items: center;
+  padding-left: 215px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .global-header .main-navigation ul {
@@ -43,12 +46,6 @@ a {
   align-items: center;
   width: 259px;
   margin-left: 93px;
-}
-
-.header-logo {
-  padding-left: 215px;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .web-logo {
@@ -77,15 +74,26 @@ a {
   padding: 16px 0;
 }
 
-.icon-nav {
+.icon-envelope {
   width: 16px;
   height: 11.996px;
   flex-shrink: 0;
   margin-right: 10px;
   fill: #757575;
+  margin-bottom: -1px;
 }
 
-.icon-nav:hover {
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  fill: #757575;
+  margin-bottom: -3px;
+}
+
+.icon-envelope:hover,
+.icon-smartphone:hover {
   fill: var(--background-hover-button-color);
 }
 
@@ -95,14 +103,11 @@ a {
   line-height: normal;
   letter-spacing: 0.28px;
   padding: 16px 0;
+  color: #212121;
 }
 
 .navigation li a.current {
-  color: var(--background-hover-button-color);
-}
-
-.navigation .nav-link {
-  color: #212121;
+  color: rgba(33, 150, 243, 1);
 }
 
 .global-header ul {
@@ -122,7 +127,9 @@ a {
 }
 
 .mail-address:hover,
-.phone-number:hover {
+.mail-address:focus,
+.phone-number:hover,
+.phone-number:focus {
   color: rgba(33, 150, 243, 1);
 }
 
@@ -130,12 +137,16 @@ a {
   width: 270px;
 }
 
-.icon-client {
+.client-icon {
+  fill: #afb1b8;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-
   width: 170px;
   height: 92px;
+}
+
+.client-icon:hover {
+  fill: #2196f3;
 }
 
 .phone-number {
@@ -151,9 +162,9 @@ a {
 }
 
 .nav-link:hover,
-.contact:hover,
+.current:hover,
 .nav-link:focus,
-.contact:focus {
+.current:focus {
   color: var(--background-hover-button-color);
 }
 
@@ -162,8 +173,11 @@ a {
   height: 600px;
   flex-shrink: 0;
   background: #2f303a;
-  background: url("../images/business-solution-background.jpg"),
-    lightgray 0px -147.517px / 100% 170.667% no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/business-solution-background.jpg");
 }
 
 .business-solution {
@@ -210,7 +224,7 @@ a {
 
 .about-us-container ul {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   height: 101px;
   flex-shrink: 0;
   gap: 25px;
@@ -361,23 +375,24 @@ a {
   gap: 10px;
 }
 
-.icon1 {
+.icon-bottom {
+  border-radius: 44px;
+  width: 44px;
+  height: 44px;
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.team-icon {
   border-radius: 44px;
   width: 44px;
   height: 44px;
   fill: #ffffff;
 }
 
-.icon1:focus {
-  outline: 0;
-}
-
-.icon1:hover {
+.team-icon:hover,
+.icon-bottom:hover {
   fill: #2196f3;
   border-radius: 44px;
-}
-
-.icon1:active {
 }
 
 .regular-customer-section {
@@ -429,15 +444,17 @@ a {
 
 .work-cards {
   display: flex;
-  width: 1200px;
+  flex: 1 0 auto;
+  min-width: 1200px;
 }
 
 .our-work-section .work-cards ul {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 0 auto;
   justify-content: space-between;
   flex-basis: calc((100%-90px) / 3);
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .our-work-section {
@@ -454,7 +471,7 @@ a {
 }
 
 .our-work-section .work-cards li {
-  width: 31.8%;
+  width: 370px;
   height: 404px;
   flex-shrink: 0;
   background: var(--button-hover-text-color);
